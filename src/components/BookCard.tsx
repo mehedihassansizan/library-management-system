@@ -1,0 +1,47 @@
+import { cn } from "@/lib/utils";
+import Image from "next/image";
+import Link from "next/link";
+import BookCover from "./BookCover";
+import { Button } from "./ui/button";
+
+const BookCard = ({
+  id,
+  title,
+  genre,
+  coverColor,
+  coverUrl,
+  isLoanedbook = false,
+}: Book) => (
+  <li className={cn(isLoanedbook && "x:w-52 w-full")}>
+    <Link
+      href={`/books/${id}`}
+      className={cn(isLoanedbook && "w-full flex flex-col items-center")}
+    >
+      <BookCover coverColor={coverColor} coverUrl={coverUrl}></BookCover>
+
+      <div className={cn("mt-4 ", !isLoanedbook && "xs:max-w-40 max-w-28")}>
+        <p className="book-title">{title}</p>
+        <p className="book-genre">{genre}</p>
+      </div>
+
+      {isLoanedbook && (
+        <div className="mt-3 w-full">
+          <div className="book-loaned">
+            <Image
+              src="/icons/calendar.svg"
+              alt="calendar"
+              height={18}
+              width={18}
+              className="object-contain"
+            ></Image>
+            <p className="text-light-100">11 days left to return</p>
+          </div>
+
+          <Button className="book-btn">Download receipt</Button>
+        </div>
+      )}
+    </Link>
+  </li>
+);
+
+export default BookCard;
