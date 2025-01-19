@@ -3,7 +3,6 @@ import { Button } from "@/components/ui/button";
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -85,16 +84,15 @@ const AuthForm = <T extends FieldValues>({
                       />
                     )}
                   </FormControl>
-                  <FormDescription>
-                    This is your public display name.
-                  </FormDescription>
                   <FormMessage />
                 </FormItem>
               )}
             />
           ))}
 
-          <Button type="submit">Submit</Button>
+          <Button type="submit" className="form-btn">
+            {isSignIn ? "Sign In" : "Sign Up"}
+          </Button>
         </form>
       </Form>
       <p className="text-center text-base font-medium">
