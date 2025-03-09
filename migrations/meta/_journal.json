@@ -15,6 +15,13 @@
       "when": 1741173711523,
       "tag": "0001_mushy_winter_soldier",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1741512932845,
+      "tag": "0002_spotty_hammerhead",
+      "breakpoints": true
     }
   ]
 }

@@ -3,7 +3,7 @@ import { users } from "@/database/schema";
 import { eq } from "drizzle-orm";
 import Image from "next/image";
 import BookCover from "./BookCover";
-import { Button } from "./ui/button";
+import BorrowBook from "./BorrowBook";
 
 interface Props extends Book {
   userId: string;
@@ -72,15 +72,13 @@ const BookOverview = async ({
 
         <p className="book-description">{description}</p>
 
-        <Button className="book-overview_btn ">
-          <Image
-            src="/icons/book.svg"
-            alt="book"
-            height={20}
-            width={20}
-          ></Image>
-          <p className="font-bebas-neue text-xl text-dark-100">Borrow </p>
-        </Button>
+        {user && (
+          <BorrowBook
+            userId={userId}
+            bookId={id}
+            borrowingEligibility={borrowingEligibility}
+          />
+        )}
       </div>
 
       <div className="relative flex flex-1 justify-center">
