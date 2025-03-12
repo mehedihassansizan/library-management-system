@@ -21,7 +21,7 @@
 
 ## <a name="introduction">🤖 Introduction</a>
 
-Built with Next.js, TypeScript, and Postgres, the University Library Management System is a production-grade platform featuring a public-facing app and an admin interface. It offers advanced functionalities like seamless book borrowing with reminders and receipts, robust user management, automated workflows, and a modern, optimized tech stack for real-world scalability.
+Built with Next.js, TypeScript, and Postgres, the University Library Management System is a production-grade platform featuring a public-facing app and an admin interface. It offers advanced functionalities like **Onboarding Workflows** Automated welcome emails when users sign up, with follow-ups based on inactivity or activity dates.
 
 ## <a name="tech-stack">⚙️ Tech Stack</a>
 
@@ -41,23 +41,23 @@ Built with Next.js, TypeScript, and Postgres, the University Library Management 
 
 👉 **Home Page**: Highlighted books and newly added books with 3D effects.
 
-👉 **Library Page**: Advanced filtering, search, and pagination for book discovery.
+👉 **Library Page**: Advanced filtering, search, and pagination for book discovery (coming soon).
 
-👉 **Book Detail Pages**: Availability tracking, book summaries, videos, and suggestions for similar books.
+👉 **Book Detail Pages**: Availability tracking(coming soon), book summaries, videos, and suggestions for similar books.
 
-👉 **Profile Page**: Manage accounts, track borrowed books, and download receipts.
+👉 **Profile Page**: Manage accounts, track borrowed books, and download receipts(coming soon).
 
 👉 **Onboarding Workflows**: Automated welcome emails when users sign up, with follow-ups based on inactivity or activity dates.
 
-👉 **Borrow Book Reminder**: Customized email notifications sent before, on, and after the due date, reminding users to return books or avoid charges.
+👉 **Borrow Book Reminder**: Customized email notifications sent before, on, and after the due date, reminding users to return books or avoid charges(coming soon).
 
-👉 **Borrow Book Receipt**: Automatically generates a customized PDF receipt when a book is successfully borrowed.
+👉 **Borrow Book Receipt**: Automatically generates a customized PDF receipt when a book is successfully borrowed(coming soon).
 
 👉 **Analytics Dashboard**: Statistics, new users, books, borrow requests, and more.
 
-👉 **All Users Page**: View and manage users, including approving or revoking access.
+👉 **All Users Page**: View and manage users, including approving or revoking access(coming soon).
 
-👉 **Account Requests Page**: Admin approval for account requests, with email notifications for user verification.
+👉 **Account Requests Page**: Admin approval for account requests, with email notifications for user verification(coming soon).
 
 👉 **All Books Page**: List and manage all library books with advanced search, pagination, and filters.
 
@@ -65,11 +65,11 @@ Built with Next.js, TypeScript, and Postgres, the University Library Management 
 
 👉 **Book Details Page**: Detailed book information for administrators.
 
-👉 **Borrow Records Page**: Complete borrow history with pagination and search.
+👉 **Borrow Records Page**: Complete borrow history with pagination and search(coming soon).
 
-👉 **Role Management**: Change user roles to invite more admins, with email notifications sent upon role updates.
+👉 **Role Management**: Change user roles to invite more admins, with email notifications sent upon role updates(coming soon).
 
-👉 **Advanced Functionalities**: Caching, rate-limiting, DDoS protection, and custom notifications.
+👉 **Advanced Functionalities**: Caching, rate-limiting, DDoS protection, and {custom notifications(coming soon)}.
 
 👉 **Database Management**: Postgres with Neon for scalable and collaborative database handling.
 
